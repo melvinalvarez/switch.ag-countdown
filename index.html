@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SwitchDex - Coming Soon</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Daily Token">
+        <meta name="author" content="Melvin Alvarez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,600" rel="stylesheet">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <img class="logo" src="https://switch.ag/assets/logo.svg">
+            <p class="coming-soon">Coming Soon</p>
+            <div id="countdown-timer"></div>
+            <div id="socials">
+                <a href="https://twitter.com/ethershiftco" target="_blank"><img class="twitter" src="https://switch.ag/assets/icon-twitter.svg"></a>
+                <a href="https://t.me/ethershiftco" target="_blank"><img class="telegram" src="https://switch.ag/assets/icon-telegram.svg"></a>
+            </div>
+        </div>
+        
+        <div id="app">
+        	<svg id="artwork">
+        		<path id="path" :d="path" stroke="#23A3E8" stroke-width="2" fill="transparent"></path>
+        	</svg>
+        </div>
+        
+    <script src="js/main.js"></script>
+    <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("March 4, 2019 12:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get todays date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              // Display result
+              document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // when countdown ends
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+        </script>
+    </body>
+</html>

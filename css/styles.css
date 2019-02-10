@@ -1,0 +1,232 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background-color: #13222B;
+}
+
+p {
+    color: #DDDDDD;
+}
+
+.container {
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+}
+
+    .logo {
+        position: relative;
+        top: 60px;
+        left: -10px;
+        margin: 0 auto;
+        width: 70%;
+        display: inherit;
+    }
+    
+    .coming-soon {
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 200;
+        z-index: 5;
+    }
+    
+    #countdown-timer {
+        position: relative;
+        text-align: center;
+        font-size: 3em;
+        top: 40px;
+        font-weight: 200;
+        color: #DDDDDD;
+        z-index: 5;
+    }
+    
+    #socials {
+        position: relative;
+        margin: 0 auto;
+        width: 80px;
+        top: 80px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+    }
+
+    .telegram,
+    .twitter{
+        height: 18px;
+        opacity: .5;
+    }
+    
+#app {
+    left: 0px;
+    position: absolute;
+    top: -180px;
+    width: 100%;
+}
+
+#artwork{
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+	width: 107vw;
+	height: 100vh;
+	display: block;
+}
+
+
+/* Larger than phone */
+@media (min-width: 550px) {
+    
+.container {
+    width: 750px;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+}  
+    
+    .logo {
+        position: relative;
+        top: 60px;
+    }
+    
+    .coming-soon {
+        position: relative;
+        font-size: 36px;
+        color: #DDD;
+        top: 100px;
+        text-align: center;
+        font-weight: 200;
+        z-index: 5;
+    }
+    
+    #countdown-timer {
+        position: relative;
+        text-align: center;
+        font-size: 4em;
+        top: 80px;
+        font-weight: 200;
+        color: #DDDDDD;
+        z-index: 5;
+    }
+    
+    #socials {
+    position: relative;
+    margin: 0 auto;
+    width: 80px;
+    top: 120px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    }
+
+    .telegram,
+    .twitter{
+        height: 18px;
+        opacity: .5;
+    }
+    
+        .telegram:hover,
+        .twitter:hover {
+            opacity: 1;
+            transition: .2s;
+        }
+        
+    #app {
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+        
+    #artwork{
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+    	width: 100vw;
+    	height: 100vh;
+    	display: block;
+    }
+    
+}
+
+
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+.container {
+    width: 750px;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+}  
+    
+    .logo {
+        position: relative;
+        top: 60px;
+    }
+    
+    .coming-soon {
+        position: relative;
+        font-size: 36px;
+        color: #DDD;
+        top: 100px;
+        text-align: center;
+        font-weight: 200;
+        z-index: 5;
+    }
+    
+    #countdown-timer {
+        position: relative;
+        text-align: center;
+        font-size: 4em;
+        top: 80px;
+        font-weight: 200;
+        color: #DDDDDD;
+        z-index: 5;
+    }
+    
+    #socials {
+    position: relative;
+    margin: 0 auto;
+    width: 80px;
+    top: 120px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    }
+
+    .telegram,
+    .twitter{
+        height: 18px;
+        opacity: .5;
+    }
+    
+        .telegram:hover,
+        .twitter:hover {
+            opacity: 1;
+            transition: .2s;
+        }
+    
+    #app {
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    
+    #artwork{
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+    	width: 100vw;
+    	height: 100vh;
+    	display: block;
+    }
+}
+
+
